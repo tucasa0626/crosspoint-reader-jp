@@ -68,8 +68,8 @@ constexpr int raiseAboveBase(int markTop, int markHeight, int baseTop) {
 
 /// Font data stored PER GLYPH
 typedef struct {
-  uint8_t width;        ///< Bitmap dimensions in pixels
-  uint8_t height;       ///< Bitmap dimensions in pixels
+  uint16_t width;        ///< Bitmap dimensions in pixels
+  uint16_t height;       ///< Bitmap dimensions in pixels
   uint16_t advanceX;    ///< Distance to advance cursor (x axis), 12.4 fixed-point in pixels
   int16_t left;         ///< X dist from cursor pos to UL corner
   int16_t top;          ///< Y dist from cursor pos to UL corner
@@ -97,7 +97,7 @@ typedef struct {
 /// Class IDs are 1-based; codepoints not in the table have implicit class 0 (no kerning).
 typedef struct {
   uint16_t codepoint;  ///< Unicode codepoint
-  uint8_t classId;     ///< 1-based kerning class ID
+  uint16_t classId;     ///< 1-based kerning class ID
 } __attribute__((packed)) EpdKernClassEntry;
 
 /// Ligature substitution for a specific glyph pair, sorted by `pair` for binary search.
@@ -125,8 +125,8 @@ typedef struct {
   const int8_t* kernMatrix;              ///< Flat leftClassCount x rightClassCount matrix, 4.4 fixed-point in pixels
   uint16_t kernLeftEntryCount;           ///< Entries in kernLeftClasses
   uint16_t kernRightEntryCount;          ///< Entries in kernRightClasses
-  uint8_t kernLeftClassCount;            ///< Number of distinct left classes (matrix rows)
-  uint8_t kernRightClassCount;           ///< Number of distinct right classes (matrix cols)
+  uint16_t kernLeftClassCount;            ///< Number of distinct left classes (matrix rows)
+  uint16_t kernRightClassCount;           ///< Number of distinct right classes (matrix cols)
   const EpdLigaturePair* ligaturePairs;  ///< Sorted ligature pair table (nullptr if none)
   uint32_t ligaturePairCount;            ///< Number of entries in ligaturePairs
 } EpdFontData;
