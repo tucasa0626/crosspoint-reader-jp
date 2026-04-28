@@ -115,7 +115,7 @@ EpdFontFamily opendyslexic14FontFamily(&opendyslexic14RegularFont, &opendyslexic
                                        &opendyslexic14BoldItalicFont);
 #endif  // OMIT_FONTS
 
-EpdFont smallFont(&notosans_8_regular);
+EpdFont smallFont(&notosansjp_8_regular);
 EpdFontFamily smallFontFamily(&smallFont);
 
 EpdFont ui10RegularFont(&ubuntu_10_regular);

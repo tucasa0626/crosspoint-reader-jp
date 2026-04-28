@@ -58,3 +58,4 @@
 #include <builtinFonts/ubuntu_jp_10_bold.h>
 #include <builtinFonts/ubuntu_jp_12_regular.h>
 #include <builtinFonts/ubuntu_jp_12_bold.h>
+#include <builtinFonts/notosansjp_8_regular.h>
