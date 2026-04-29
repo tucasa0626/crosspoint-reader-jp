@@ -114,6 +114,6 @@ esptool --chip esp32c3 --port /dev/cu.usbmodem101 --baud 921600 write-flash \
 MITライセンス（元のCrossPoint Readerに準拠）
 
 Original CrossPoint Reader: Copyright © 2025 Dave Allie  
-Japanese distribution modifications: Copyright © 2025 Tsukasa Ishizawa
+Japanese distribution modifications: Copyright © 2026 Tsukasa Ishizawa
 
 本プロジェクトはCrossPoint Reader公式プロジェクトとは無関係です。
