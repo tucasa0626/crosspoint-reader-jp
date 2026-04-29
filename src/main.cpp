@@ -89,6 +89,12 @@ EpdFontFamily notosans18FontFamily(&notosans18RegularFont, &notosans18BoldFont, 
 EpdFont notosansjp18RegularFont(&notosansjp_18_regular);
 EpdFontFamily notosansjp18FontFamily(&notosansjp18RegularFont, &notosansjp18RegularFont, &notosansjp18RegularFont, &notosansjp18RegularFont);
 
+EpdFont ubuntujp10RegularFont(&ubuntu_jp_10_regular);
+EpdFontFamily ubuntujp10FontFamily(&ubuntujp10RegularFont, &ubuntujp10RegularFont);
+EpdFont smallFont(&notosansjp_8_regular);
+EpdFontFamily smallFontFamily(&smallFont);
+
+
 EpdFont opendyslexic8RegularFont(&opendyslexic_8_regular);
 EpdFont opendyslexic8BoldFont(&opendyslexic_8_bold);
 EpdFont opendyslexic8ItalicFont(&opendyslexic_8_italic);
@@ -115,23 +121,7 @@ EpdFontFamily opendyslexic14FontFamily(&opendyslexic14RegularFont, &opendyslexic
                                        &opendyslexic14BoldItalicFont);
 #endif  // OMIT_FONTS
 
-EpdFont smallFont(&notosansjp_8_regular);
-EpdFontFamily smallFontFamily(&smallFont);
 
-EpdFont ui10RegularFont(&ubuntu_10_regular);
-EpdFont ui10BoldFont(&ubuntu_10_bold);
-EpdFontFamily ui10FontFamily(&ui10RegularFont, &ui10BoldFont);
-
-EpdFont ui12RegularFont(&ubuntu_12_regular);
-EpdFont ui12BoldFont(&ubuntu_12_bold);
-EpdFontFamily ui12FontFamily(&ui12RegularFont, &ui12BoldFont);
-
-EpdFont ubuntujp10RegularFont(&ubuntu_jp_10_regular);
-EpdFont ubuntujp10BoldFont(&ubuntu_jp_10_bold);
-EpdFontFamily ubuntujp10FontFamily(&ubuntujp10RegularFont, &ubuntujp10BoldFont);
-EpdFont ubuntujp12RegularFont(&ubuntu_jp_12_regular);
-EpdFont ubuntujp12BoldFont(&ubuntu_jp_12_bold);
-EpdFontFamily ubuntujp12FontFamily(&ubuntujp12RegularFont, &ubuntujp12BoldFont);
 
 // measurement of power button press duration calibration value
 unsigned long t1 = 0;
@@ -225,13 +215,13 @@ void setupDisplayAndFonts() {
   renderer.insertFont(NOTOSANS_16_FONT_ID, notosans16FontFamily);
   renderer.insertFont(NOTOSANS_18_FONT_ID, notosans18FontFamily);
   renderer.insertFont(NOTOSANSJP_18_FONT_ID, notosansjp18FontFamily);
+
   renderer.insertFont(OPENDYSLEXIC_8_FONT_ID, opendyslexic8FontFamily);
   renderer.insertFont(OPENDYSLEXIC_10_FONT_ID, opendyslexic10FontFamily);
   renderer.insertFont(OPENDYSLEXIC_12_FONT_ID, opendyslexic12FontFamily);
   renderer.insertFont(OPENDYSLEXIC_14_FONT_ID, opendyslexic14FontFamily);
 #endif  // OMIT_FONTS
   renderer.insertFont(UI_10_FONT_ID, ubuntujp10FontFamily);
-  renderer.insertFont(UI_12_FONT_ID, ubuntujp12FontFamily);
   renderer.insertFont(SMALL_FONT_ID, smallFontFamily);
   LOG_DBG("MAIN", "Fonts setup");
 }

@@ -49,13 +49,8 @@
 #include <builtinFonts/opendyslexic_8_bolditalic.h>
 #include <builtinFonts/opendyslexic_8_italic.h>
 #include <builtinFonts/opendyslexic_8_regular.h>
-#include <builtinFonts/ubuntu_10_bold.h>
 #include <builtinFonts/ubuntu_10_regular.h>
-#include <builtinFonts/ubuntu_12_bold.h>
-#include <builtinFonts/ubuntu_12_regular.h>
 #include <builtinFonts/notosansjp_18_regular.h>
 #include <builtinFonts/ubuntu_jp_10_regular.h>
-#include <builtinFonts/ubuntu_jp_10_bold.h>
-#include <builtinFonts/ubuntu_jp_12_regular.h>
-#include <builtinFonts/ubuntu_jp_12_bold.h>
+#include <builtinFonts/notosansjp_8_regular.h>
 #include <builtinFonts/notosansjp_8_regular.h>
